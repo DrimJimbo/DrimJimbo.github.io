@@ -3,61 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="css/style.css" />
-        <script src="script.js" type="module"></script>
+        <script src="js/script.js" type="module" defer></script>
         <title>Mon Portfolio</title>
     </head>
     <body>
         <header>
-            <nav>
-                <ul>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#projects">Projets</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <h1 id="mpftext">Mon Portfolio</h1>
+            <button id="navbutton">&darr;</button>
         </header>
 
-        <main>
-            <section id="about">
-                <h1>Bienvenue sur mon portfolio</h1>
-                <p>
-                    Je suis un développeur passionné par la création de
-                    solutions innovantes.
-                </p>
-            </section>
-
-            <section id="projects">
-                <h2>Mes Projets</h2>
-                <div class="project">
-                    <h3>Projet 1</h3>
-                    <p>Description du projet 1.</p>
-                </div>
-                <div class="project">
-                    <h3>Projet 2</h3>
-                    <p>Description du projet 2.</p>
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2>Contactez-moi</h2>
-                <form>
-                    <label for="name">Nom:</label>
-                    <input type="text" id="name" name="name" required />
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-
-                    <button type="submit">Envoyer</button>
-                </form>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2024 Mon Portfolio. Tous droits réservés.</p>
-        </footer>
+        <nav id="nav">
+            <ul id="navigation">
+                <li><a href="#aboutme">À propos de moi</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="aboutme">
+            <h2>À propos de moi</h2>
+            <p>
+                Bonjour! Je suis étudiant en 3éme année de licence informatique
+                à l'université d'artois à Lens.
+            </p>
+        </div>
     </body>
 </html>

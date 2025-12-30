@@ -1,0 +1,162 @@
+body {
+    margin: 0%;
+    background-image: url(../images/cover-siam__-1024x819.png);
+    background-size: 100%;
+    backdrop-filter: blur(15px);
+    padding: 15px;
+}
+
+#head {
+    text-align: center;
+    height: 30px;
+    vertical-align: center;
+    margin: auto 15;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+#plateau {
+    height: 1000px;
+    width: 658px;
+    margin: auto;
+    text-align: center;
+    background-image: url(../images/plateau__1000x658.jpg);
+    background-size: cover;
+}
+
+.cases {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.case {
+    aspect-ratio: 1 / 1;
+    margin: 1px;
+    width: 18%;
+    background-color: #00000000;
+    border: solid #00000077;
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.case:hover {
+    background-color: #00000055;
+}
+
+.selectable {
+    border: solid #d8ff6d;
+}
+
+.selected {
+    border: solid #3802b5;
+}
+
+.deplacementPossible,
+.deplacementPossibleNonCliquable {
+    background-color: rgba(165, 42, 42, 0.457);
+}
+
+.ligne {
+    vertical-align: center;
+}
+.pionSortie {
+    margin: 15px;
+}
+
+.moved {
+    border: solid brown;
+}
+
+#head > * {
+    font-size: 15px;
+}
+
+.entreeCoin {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+    background-image: url(../images/fleche-gauche.png);
+    background-size: cover;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 10%;
+}
+
+.entreeCoin:hover {
+    background-color: #00000055;
+}
+
+#b00 {
+    top: 215px;
+    left: 72px;
+    transform: rotate(-90deg);
+}
+
+#d00 {
+    top: 175px;
+    left: 112px;
+    transform: rotate(180deg);
+}
+
+#b04 {
+    top: 215px;
+    left: 555px;
+    transform: rotate(-90deg);
+}
+
+#g04 {
+    top: 175px;
+    left: 515px;
+}
+
+#h40 {
+    top: 618px;
+    left: 72px;
+    transform: rotate(90deg);
+}
+
+#d40 {
+    top: 657px;
+    left: 112px;
+    transform: rotate(180deg);
+}
+
+#h44 {
+    top: 618px;
+    left: 555px;
+    transform: rotate(90deg);
+}
+
+#g44 {
+    top: 657px;
+    left: 515px;
+}
+
+#bSortie,
+.bOrientation {
+    text-decoration: none;
+    font-family: arial;
+    font-size: 1em;
+    color: #ffffff;
+    background-color: #899f11;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border: 4px solid #ffffff;
+    box-shadow: 3px 3px 12px #444444;
+    -webkit-box-shadow: 3px 3px 12px #444444;
+    -moz-box-shadow: 3px 3px 12px #444444;
+    text-align: end;
+}
+
+#bSortie:hover,
+.bOrientation:hover {
+    background-color: #ffffff;
+    color: #899f11;
+}

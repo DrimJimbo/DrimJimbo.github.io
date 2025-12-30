@@ -62,3 +62,37 @@ nav.open {
     color: #60a5fa; /* accent hover */
     text-decoration: underline;
 }
+
+/* TITLE */
+.title {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+/* ABOUTME */
+#aboutme {
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    display: flex;
+}
+
+#paboutme {
+    margin: 70px;
+}
+
+#contact {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* PROJECTS */
+#projects {
+    display: flex;
+}
+
+#projectactu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

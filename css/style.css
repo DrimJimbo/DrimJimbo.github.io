@@ -1,98 +1,244 @@
-/* HEADER */
-header {
-    background-color: #1e3a8a; /* bleu profond */
-    color: #f3f4f6; /* gris clair */
+/* ==============================
+   BASE
+   ============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: "Atkinson Hyperlegible Mono", sans-serif;
-    font-size: 24px;
+    background-color: #f2f6f7;
+    color: #1b2a2a;
+    line-height: 1.8;
+    font-size: 19px; /* ⬆️ très lisible */
+}
+
+/* ==============================
+   TITRES
+   ============================== */
+
+h1 {
+    font-size: 48px; /* ⬆️ */
+}
+
+h2.title {
     text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 100px 0 60px;
+    font-size: 38px; /* ⬆️ */
+    color: #134b4a;
 }
 
-/* BOUTON NAV */
+h3 {
+    font-size: 30px; /* ⬆️ */
+}
+
+/* ==============================
+   HEADER & NAV
+   ============================== */
+
+header {
+    background-color: #134b4a;
+    color: white;
+    padding: 35px 60px; /* ⬆️ */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #navbutton {
+    font-size: 36px; /* ⬆️ */
     background: none;
-    border: 2px solid #f3f4f6;
-    color: #f3f4f6;
-    font-size: 32px;
+    border: none;
+    color: white;
     cursor: pointer;
-    margin-top: 5px;
-    border-radius: 6px;
-    transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-#navbutton:hover {
-    background-color: #60a5fa; /* hover bleu clair */
-    color: #fff;
-    transform: scale(1.1);
-}
-
-/* NAV EXTENSION */
-nav {
-    background-color: #2563eb; /* bleu vif */
-    overflow: hidden;
+#nav {
+    background-color: #1e7b78;
     max-height: 0;
+    overflow: hidden;
     transition: max-height 0.35s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav.open {
-    max-height: 120px;
+#nav.open {
+    max-height: 160px;
 }
 
-/* NAVIGATION HORIZONTALE */
 #navigation {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding: 10px 0;
+    gap: 80px;
+    padding: 35px 0;
     list-style: none;
-    margin: 0;
 }
 
-/* LIENS */
 #navigation a {
     text-decoration: none;
-    color: #f3f4f6; /* texte clair */
-    font-size: 16px;
-    transition: color 0.3s ease;
+    color: white;
+    font-size: 22px; /* ⬆️ */
+    font-weight: 500;
 }
 
 #navigation a:hover {
-    color: #60a5fa; /* accent hover */
     text-decoration: underline;
 }
 
-/* TITLE */
-.title {
-    font-family: "Atkinson Hyperlegible Mono", sans-serif;
-    font-size: 36px;
-    margin: 20px 0;
+/* ==============================
+   ABOUT ME
+   ============================== */
+
+#aboutme {
+    max-width: 1400px; /* ⬆️ */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    padding: 0 60px;
 }
 
-/* ABOUTME */
-#aboutme {
-    font-family: "Atkinson Hyperlegible Mono", sans-serif;
-    display: flex;
+#profilepic {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
 }
 
 #paboutme {
-    margin: 70px;
+    font-size: 20px; /* ⬆️ */
 }
 
-#contact {
+#paboutme a {
+    color: #299692;
+    font-weight: 600;
     text-decoration: none;
-    font-weight: bold;
-    color: black;
 }
 
-/* PROJECTS */
+#paboutme a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   PROJECTS
+   ============================== */
+
 #projects {
+    max-width: 1500px; /* ⬆️ */
+    margin: auto;
     display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 0 60px;
+}
+
+#btnleft,
+#btnright {
+    font-size: 42px; /* ⬆️ */
+    background-color: #299692;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 20px 28px;
+    cursor: pointer;
+}
+
+#btnleft:hover,
+#btnright:hover {
+    background-color: #134b4a;
 }
 
 #projectactu {
+    flex: 1;
+    background-color: white;
+    border-radius: 24px;
+    padding: 80px; /* ⬆️ énorme respiration */
+    min-height: 700px; /* ⬆️ */
+    box-shadow: 0 30px 65px rgba(0, 0, 0, 0.18);
+
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    text-align: center;
+}
+
+#projectactu img {
+    max-height: 360px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+#projectactu p {
+    font-size: 20px; /* ⬆️ */
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ==============================
+   CONTACT FORM
+   ============================== */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+#contact-form {
+    width: 100%;
+    max-width: 900px; /* ⬆️ */
+    background-color: white;
+    padding: 75px 80px; /* ⬆️ */
+    border-radius: 28px;
+    box-shadow: 0 30px 70px rgba(0, 0, 0, 0.18);
+
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.form-group label {
+    font-size: 18px; /* ⬆️ */
+    font-weight: 600;
+    color: #134b4a;
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: inherit;
+    font-size: 19px; /* ⬆️ */
+    padding: 20px 22px;
+    border-radius: 16px;
+    border: 1px solid #cfd8dc;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #299692;
+    box-shadow: 0 0 0 5px rgba(41, 150, 146, 0.25);
+}
+
+#contact-form button {
+    align-self: center;
+    padding: 20px 90px;
+    font-size: 20px; /* ⬆️ */
+    font-weight: 600;
+    background-color: #299692;
+    color: white;
+    border: none;
+    border-radius: 45px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #134b4a;
 }

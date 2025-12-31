@@ -20,6 +20,15 @@ btnright.addEventListener("click", () => {
     getProject();
 });
 
+const btnleft = document.getElementById("btnleft");
+btnleft.addEventListener("click", () => {
+    i--;
+    if (i < 0) {
+        i = listprojects.length - 1;
+    }
+    getProject();
+});
+
 /* SIAM */
 const titleSiam = "Siam";
 const siamlink = "projects/SIAM/Vue/html/index.html";

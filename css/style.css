@@ -106,7 +106,7 @@ header {
     box-shadow: 0 16px 40px rgba(0, 0, 0, 0.2);
 }
 
-#paboutme {
+.paboutme {
     font-size: 20px;
     width: 648px;
     height: 448px;

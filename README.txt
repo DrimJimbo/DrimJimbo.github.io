@@ -1,5 +1,2 @@
 -Ajout du parcours professionnel
-
-projet : 
-shell
-tetris
+-Ajout de transitions 

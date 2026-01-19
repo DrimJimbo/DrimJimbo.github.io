@@ -10,7 +10,7 @@ const rigthabout = document.getElementById("btnright1");
 const leftabout = document.getElementById("btnleft1");
 const div = document.getElementById("aboutme");
 var presentation = document.createElement("p");
-presentation.id = "paboutme";
+presentation.className = "paboutme";
 presentation.innerHTML = `
 Bonjour! Je m'appelle Aymerik. J'ai 21 ans. Je suis étudiant en
     3éme année de licence informatique à l'université d'artois à
@@ -44,8 +44,10 @@ presentation.appendChild(document.createElement("br"));
 presentation.appendChild(lmLink);
 div.insertBefore(presentation, rigthabout);
 //
-var langage = document.createElement("p");
-langage.id = "paboutme";
+var langageleft = document.createElement("p");
+langageleft.className = "paboutme";
+var langageright = document.createElement("p");
+langageright.className = "paboutme";
 const imgPython = document.createElement("img");
 imgPython.src = "../images/python.png";
 imgPython.className = "imgLangage";
@@ -71,30 +73,44 @@ const imgShell = document.createElement("img");
 imgShell.src = "../images/shell.png";
 imgShell.className = "imgLangage";
 
-langage.appendChild(imgPython);
-langage.appendChild(document.createTextNode(" Python"));
-langage.appendChild(document.createElement("br"));
-langage.appendChild(imgC);
-langage.appendChild(document.createTextNode(" C"));
-langage.appendChild(document.createElement("br"));
-langage.appendChild(imgJava);
-langage.appendChild(document.createTextNode(" Java"));
-langage.appendChild(document.createElement("br"));
-langage.appendChild(imgJs);
-langage.appendChild(document.createTextNode(" JavaScript"));
-langage.appendChild(document.createElement("br"));
-langage.appendChild(imgSql);
-langage.appendChild(document.createTextNode(" SQL"));
-langage.appendChild(document.createElement("br"));
-langage.appendChild(imgHtmlCss);
-langage.appendChild(document.createTextNode(" HTML/CSS"));
-langage.appendChild(document.createElement("br"));
-langage.appendChild(imgPhp);
-langage.appendChild(document.createTextNode(" PHP"));
-langage.appendChild(document.createElement("br"));
-langage.appendChild(imgShell);
-langage.appendChild(document.createTextNode(" Shell Script"));
-langage.appendChild(document.createElement("br"));
+langageleft.appendChild(imgPython);
+langageleft.appendChild(document.createTextNode(" Python"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(imgC);
+langageleft.appendChild(document.createTextNode(" C"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(imgJava);
+langageleft.appendChild(document.createTextNode(" Java"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(imgJs);
+langageleft.appendChild(document.createTextNode(" JavaScript"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(document.createElement("br"));
+langageleft.appendChild(document.createElement("br"));
+langageright.appendChild(imgSql);
+langageright.appendChild(document.createTextNode(" SQL"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(imgHtmlCss);
+langageright.appendChild(document.createTextNode(" HTML/CSS"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(imgPhp);
+langageright.appendChild(document.createTextNode(" PHP"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(document.createElement("br"));
+langageright.appendChild(imgShell);
+langageright.appendChild(document.createTextNode(" Shell Script"));
+langageright.appendChild(document.createElement("br"));
 
 var j = 0;
 rigthabout.addEventListener("click", () => {
@@ -104,10 +120,20 @@ rigthabout.addEventListener("click", () => {
     }
     switch (j) {
         case 0:
-            div.replaceChild(presentation, document.getElementById("paboutme"));
+            var node = document.getElementsByClassName("paboutme");
+            while (node.length > 0) {
+                div.removeChild(node[0]);
+            }
+            presentation.style.width = "648px";
+            presentation.style.height = "448px";
+            div.insertBefore(presentation, rigthabout);
             break;
         case 1:
-            div.replaceChild(langage, document.getElementById("paboutme"));
+            div.removeChild(document.getElementsByClassName("paboutme")[0]);
+            langageleft.style.width = "324px";
+            langageright.style.width = "324px";
+            div.insertBefore(langageleft, rigthabout);
+            div.insertBefore(langageright, rigthabout);
             break;
         default:
             break;
@@ -120,10 +146,20 @@ leftabout.addEventListener("click", () => {
     }
     switch (j) {
         case 0:
-            div.replaceChild(presentation, document.getElementById("paboutme"));
+            var node = document.getElementsByClassName("paboutme");
+            while (node.length > 0) {
+                div.removeChild(node[0]);
+            }
+            presentation.style.width = "648px";
+            presentation.style.height = "448px";
+            div.insertBefore(presentation, rigthabout);
             break;
         case 1:
-            div.replaceChild(langage, document.getElementById("paboutme"));
+            div.removeChild(document.getElementsByClassName("paboutme")[0]);
+            langageleft.style.width = "324px";
+            langageright.style.width = "324px";
+            div.insertBefore(langageleft, rigthabout);
+            div.insertBefore(langageright, rigthabout);
             break;
         default:
             break;

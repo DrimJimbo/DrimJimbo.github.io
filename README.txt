@@ -1,2 +1,0 @@
--Ajout du parcours professionnel
--Ajout de transitions 

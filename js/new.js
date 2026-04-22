@@ -99,28 +99,28 @@ const projects = [
         desc: "Conception d'une bibliothèque en ligne de commande.",
         image: "projects/biblio_shell/bibli.png",
         tech: ["Bash", "Linux"],
-        zip: "projects/biblio_shell/biblio.zip",
+        zip: "./projects/biblio_shell/biblio.zip",
     },
     {
         name: "Serveur Web Java",
         desc: "Conception d'un serveur web en Java en utilisant certain patron de conception.",
         image: "images/java.png",
         tech: ["Java", "Patron de conception"],
-        zip: "projects/serveur_web/serveur_web_java.zip",
+        zip: "./projects/serveur_web/serveur_web_java.zip",
     },
     {
         name: "Bourse en ligne",
         desc: "Création d'un site simulant une bourse en ligne.",
         image: "projects/bourse/bourse.png",
         tech: ["PHP", "SQLite", "FullStack"],
-        zip: "projects/bourse/bourse_en_ligne.zip",
+        zip: "./projects/bourse/bourse_en_ligne.zip",
     },
     {
         name: "Space Invaders",
         desc: "Codage du jeu Space Invaders en langage C.",
         image: "projects/space_invaders/space.png",
         tech: ["Langage C"],
-        zip: "projects/space_invaders/space_invaders.zip",
+        zip: "./projects/space_invaders/space_invaders.zip",
     },
 ];
 
